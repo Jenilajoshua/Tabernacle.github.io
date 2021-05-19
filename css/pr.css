@@ -1,0 +1,264 @@
+/*prayer request*/
+#img1{
+		width: 60px;
+		
+		
+	}
+#tog{
+	background-color: olivedrab;
+}
+#nav .navbar-nav .nav-item a{
+	color: #fff;
+}
+
+.navbar{
+		background-color:#0008;
+	
+	}
+.header{
+	height: 350px;
+	min-width: 100%;
+	width: auto;
+	
+	background-image: url("../images/prayer1.jpg");
+	background-size: cover;
+}
+
+
+.header>h3{
+	text-align: center;
+	margin-top: 0;
+	padding-top: 190px;
+	font-weight: 500;
+	font-size: 30px;
+	color:black;
+	font-family: 'Lobster', cursive;
+	
+}
+
+.form_content{
+	
+	height: 1030px;
+	margin: 30px 20px;
+	
+	font-size: 15px;
+	border-style:groove;
+	border-color: lightgrey;
+	border-width: 15px;
+	background-color: peachpuff;
+	
+	
+	
+	
+	
+}
+.form_label{
+margin-top: 100px;
+	
+}
+.bib{
+	text-align: center;
+	margin: 10px;
+	margin-top: 30px;
+	font-family: 'Courgette', cursive;
+	font-size: 20px;
+}
+#mess{
+	padding: 5px;
+	margin:0 10px;
+	float:left;
+}
+#mess_val{
+	
+	padding: 5px;
+	margin:0 10px;
+	float: left;
+	width: 90%;
+	
+}
+.prayercontent{
+	height: 200px;
+}
+.sub{
+	margin-top: 30px;
+
+	
+}
+#btnsub {
+	
+margin-left: 60px;
+cursor: pointer;
+
+}
+#btnre {
+	margin-left: 40px;
+	cursor: pointer;
+	
+}
+footer{
+	background-color:black;
+	height:auto;
+	margin-top: 20px;
+	color: aliceblue;
+
+}
+.phone{
+	margin: 0 auto;
+	padding-top: 15px;
+	text-align: center;
+}
+.phone i{
+	color: antiquewhite;
+}
+.copy{
+	text-align: center;
+	margin-top: 30px;
+	font-size: 13px;
+	
+}
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+	.header{
+	height: 400px;
+	
+	
+
+}
+
+	#btnsub {
+	margin-left: 180px;
+
+
+}
+#btnre {
+	margin-left: 60px;
+	
+}
+	
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+	#img1{
+		width: 80px;
+		
+		
+	}
+	.nav-link{
+		font-size: 18px;
+	}
+		.header{
+		height: 400px;
+	}
+	h3{
+		font-size: 35px;
+	}
+	#mess{
+		font-size: 20px;
+	}
+	.bib{
+
+	margin: 15px;
+	font-size: 25px;
+}
+	#btnsub {
+	margin-left: 250px;
+
+
+}
+
+
+}
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+
+#img1{
+		width: 90px;
+		
+		
+	}
+	
+	.header{
+	height: 500px;
+	
+}
+
+
+.header>h3{
+	padding-top: 300px;
+	
+	font-size: 50px;
+
+	
+}
+.form_content{
+	
+	
+	margin: 50px 90px;
+	
+	font-size: 20px;
+	
+	
+	border-width: 25px;
+	
+	
+}
+	#mess{
+		font-size: 30px;
+	}	
+.bib{
+	
+	margin: 20px;
+	
+	
+	font-size: 30px;
+}
+}
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px){
+	
+		#img1{
+		width: 100px;
+	}
+	.nav-link{
+		font-size: 23px;
+	}
+	.header{
+	height: 600px;
+	
+}
+
+
+.header>h3{
+	padding-top: 300px;
+	
+	font-size: 50px;
+
+	
+}
+.form_content{
+	
+	
+	margin: 50px 100px;
+	
+	font-size: 30px;
+	
+	
+	border-width: 28px;
+	
+	
+	
+	
+	
+	
+}
+	
+.bib{	
+	
+	font-size: 35px;
+}
+	.navbar{
+		height: 150px;
+	}
+	}
