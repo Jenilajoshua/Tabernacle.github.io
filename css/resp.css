@@ -28,11 +28,26 @@
 .header{
 	height: 350px;
 	width: auto;
-	
-	background-image: url("../images/C.jpg");
-	background-size: cover;
-}
+	background-image:url(../images/C.jpg);
+	background-size:cover;
 
+/*	background-image: url(../images/bannerbg.png),url(../images/C.jpg);*/
+/*	background-position:center right padding ,left top ;*/
+/*background-repeat: no-repeat;*/
+	
+  
+           
+/*	background-size: 30% 50%,100%;*/
+
+}
+.anno{
+      left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;
+    
+}
 	
 	.services{
 	height:auto;
@@ -53,7 +68,10 @@
 	
 }
 #carouselContent{
-	margin-top: -50px;	
+	margin-top: 50px;	
+}
+.ser_lap{
+    margin-top:50px;
 }
 .dailycontent{
 	font-size: 20px;
@@ -63,30 +81,40 @@
 	opacity: 0.9;
 	padding: 15px;
 	margin: 20px;
-
-	
-	
-	
 font-family: 'Roboto Slab', serif;
 
 }
 
-.dailycontent h3{
+.dailycontent h4{
 	text-align: center;
+	font-style: bold;
 	margin-bottom: -20px;
+		background-color: #ab2727;
 	
 }	
 
-	
+	.li {
 
+    font-size: 25px;
+    padding-top: 50px;
+	}
+/*.li a:hover{*/
+/*  text-decoration: none;*/
+/*  	font-size: 20px;*/
+/*}*/
+/*.li h4{*/
+/*     margin-top:20px;*/
+/*   	color:#F7EF8A; */
+/*}*/
 .imge{
-	height:200px;
-	width: 200px;
+	height:250px;
+	width: 250px;
 	box-shadow: 15px 5px 15px rgba(0,0,0, 0.5);
 	display: inline-block;
 	max-height: 500px;
 	max-width: 500px;
 }
+
 .content >img:hover{
 	
 	transform:scale(1.1);
@@ -94,7 +122,70 @@ font-family: 'Roboto Slab', serif;
 	box-shadow: 15px 5px 15px rgba(0,0,0, 0.5);
 
 }
+.carousel-caption{
+    height:240px;
+    /*width:50px;*/
+    /*margin:0 auto;*/
+}
+	.carousel-caption h4{
+	color:#681622;
+	
+	font-weight: bold;
 
+
+}
+.church_verse{
+
+font-family: 'Kavivanar', cursive;
+font-weight: bold;
+margin-top:20px;
+color:#F7EF8A; 
+
+	
+}
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #F7EF8A;    }
+    49%{    color: #F7EF8A; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #F7EF8A;    }
+}
+.glow {
+  font-size: 18px;
+  color: #F7EF8A;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #F7EF8A, 0 0 20px #F7EF8A, 0 0 30px #F7EF8A, 0 0 40px #F7EF8A, 0 0 50px #F7EF8A, 0 0 60px #F7EF8A, 0 0 70px #F7EF8A;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #F7EF8A, 0 0 30px #F7EF8A, 0 0 40px #F7EF8A, 0 0 50px #F7EF8A, 0 0 60px #F7EF8A, 0 0 70px #F7EF8A, 0 0 80px #F7EF8A;
+  }
+}
+.gal{
+	margin-top: 50px;
+	/*max-width: 100%;*/
+	
+}
+/*#gal{*/
+/*	margin: 0 auto;*/
+/*	max-width: 100%;*/
+/*	height: auto;*/
+/*	padding: 5px;*/
+/*	padding-top:50px;*/
+/*}	*/
+#pastormessage{
+    margin-top: 45px;
+}
 
 .foot{
 	margin-left: 20px;
@@ -256,7 +347,14 @@ textarea {
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px)
 {
-	
+	.anno{
+    height:80%;
+    position: absolute;
+     margin-top: -50%;
+ margin-left: 50%;
+ transform: translate(-50%,-50%);
+    
+}
 	
 	.navbar{
 		background-color:#0008;
@@ -322,7 +420,7 @@ textarea {
 	left:15%;
 	
 	
-	top: 35%;
+	top: 25%;
 	font-weight: 700; 
 	
 }
@@ -342,6 +440,20 @@ font-family: 'Roboto Slab', serif;
 	.services h3{
 		font-size: 30px;
 	}
+	.church_verse{
+font-size: 30px;
+	
+}
+.glow {
+  font-size: 30px;
+}
+.gal img{
+	
+	padding: 80px;
+}
+#pastormessage{
+    margin-top: 65px;
+}
 .content .row img{
 
 margin-top: 40px;
@@ -359,16 +471,15 @@ margin-top: 40px;
 	box-shadow: 15px 5px 15px rgba(0,0,0, 0.0);
 
 }
-	.content .row h2{
-	margin-top: 15px;
-	color:blanchedalmond;
-	text-align: center;
-	font-size: 20px;
-		margin-right: 40px;
+/*	.content .row h4{*/
 
-}
+/*	color:black;*/
+/*	opacity:0.8;*/
 
-}
+
+/*}*/
+
+
 .content .row a:hover{
 	text-decoration: none;	
 	
@@ -377,9 +488,13 @@ margin-top: 40px;
 	color: darkgoldenrod;
 	font-size: 30px;
 }
-}
 
-/*// Large devices (desktops, 992px and up)*/
+.li {
+
+    padding-top: 5px;
+	}
+}
+/*Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 	#img1{
 		width: 90px;
@@ -391,6 +506,7 @@ margin-top: 40px;
 
 .header{
 	height: 600px;
+	width:100%;
 	
 }
 
@@ -454,12 +570,12 @@ margin-top: 50px;
 	text-align: center;
 	font-size: 25px;
 		margin-right: 50px;
-/*		transform: skewY(-5deg);*/
-
-}
 
 
 }
+
+
+}*/
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px){
 	#img1{
@@ -479,7 +595,7 @@ margin-top: 50px;
 	
 	font-size: 38px;
 
-	
+	top:45%;
 	
 }
 
